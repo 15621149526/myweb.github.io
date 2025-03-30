@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字化城市智能感知与先进计算实验室</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #17a2b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                        url('./background2.jpg') center/cover fixed;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background: rgba(255,255,255,0.95);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        section {
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .member-card {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .member-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid var(--accent-color);
+        }
+
+        .publication-list li {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255,255,255,0.9);
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>数字化城市智能感知与先进计算实验室</h1>
+            <p>智能感知赋能未来城市，先进计算驱动创新发展</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#platform">平台概况</a></li>
+                <li><a href="#research">研究方向</a></li>
+                <li><a href="#team">研究团队</a></li>
+                <li><a href="#achievements">研究成果</a></li>
+                <li><a href="#join">加入我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="platform">
+            <h2>平台概况</h2>
+            <p>实验室面向国家新型智慧城市建设重大需求，聚焦多源异构城市大数据处理、智能感知与风险管控、智能控制系统等关键技术研究。拥有先进的实验设备和高水平研究团队，与多家知名企业建立联合实验室，承担国家自然科学基金、重点研发计划等重大项目。</p>
+        </section>
+
+        <section id="research">
+            <h2>研究方向</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>智能感知与计算</h3>
+                    <p>多模态数据融合、边缘计算、物联网感知技术</p>
+                </div>
+                <div class="research-card">
+                    <h3>城市大数据分析</h3>
+                    <p>时空数据挖掘、隐私计算、可视化分析</p>
+                </div>
+                <div class="research-card">
+                    <h3>智能控制系统</h3>
+                    <p>自主无人系统、数字孪生、智能决策</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>研究团队</h2>
+            <div class="team-grid">
+                <div class="member-card">
+                    <img src="./faculty/zheng.jpg" alt="X老师">
+                    <h3>郑XX老师</h3>
+                    <p>实验室主任，国家XXXX基金获得者</p>
+                    <p>研究方向：智能感知与边缘计算</p>
+                </div>
+                <!-- 更多成员卡片 -->
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>研究成果</h2>
+            <ul class="publication-list">
+                <li>2023年发表顶会论文10篇（CCF A类6篇）</li>
+                <li>授权发明专利15项，技术转化3项</li>
+                <li>获省部级科技进步一等奖2项</li>
+            </ul>
+        </section>
+
+        <section id="join">
+            <h2>加入我们</h2>
+            <div class="join-form">
+                <p>欢迎计算机、自动化、电子信息等相关专业同学加入！</p>
+                 <p>如果您想加入我们，请发送您的简历至以下邮箱地址：</p>
+                  <p><a href="mailto:xxx@xxx.com">xxx@xxx.com</a></p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>地址：山东管理学院长清校区博识楼 | 电话：010-12345678</p>
+            <p>© 2023 数字化城市智能感知与先进计算实验室</p>
+        </div>
+    </footer>
+</body>
+</html>
